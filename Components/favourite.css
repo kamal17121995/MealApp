@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(245, 200, 145);
+}
+
+/* fav list styles */
+#fav-list {
+    border-radius: 10px;
+    overflow: scroll;
+    /* max-height: 100%; */
+    overflow: scroll;
+    margin-top: 25px;
+}
+
+/* removing scroll bar  */
+#fav-list::-webkit-scrollbar {
+    display: none;
+}
+
+#favButton {
+    background-color: aqua;
+}
+
+.fav-meal-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+.fav-meal-item {
+    margin: 30px 0;
+    position: relative;
+    height: 400px;
+    width: 300px;
+}
+
+.meal-name {
+    position: absolute;
+
+}
+
+/* ------------------------fav ----------------------------- */
+
+#fav-div {
+    background-color: rgb(106, 98, 185);
+    background-image: linear-gradient(rgb(156, 202, 202), rgba(255, 255, 255, 0.5), rgba(3, 45, 107, 0.7));
+    border: 2.5px solid whitesmoke;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+    padding: 15px;
+    margin-top: 35px;
+}
+
+
+/* list style  */
+.centerLists {
+    border: 2px solid white;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+
+#fav-div h1 {
+    /* color: ; */
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    color: whitesmoke;
+}
+
+
+/* home anchors style */
+a img {
+    margin: 25px 0 0 25px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    float: left;
+    border-radius: 15px;
+}
+
+
+/* styles for size less then 800px  */
+
+@media only screen and (max-width:800px) {
+    .centerLists {
+        width: 450px;
+    }
+
+    a img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+/* styles for size less then 500px */
+
+@media only screen and (max-width:500px) {
+    .centerLists {
+        width: 350px;
+    }
+
+
+    /* fav list styles */
+    #fav-div {
+        padding: 5px;
+    }
+
+}
+
+
+
+/* styles for size less then 380px */
+@media only screen and (max-width:380px) {
+    .centerLists {
+        width: 250px;
+    }
+
+    /* home anchor size reduce */
+    a img {
+        height: 25px;
+        width: 25px;
+    }
+}
